@@ -86,7 +86,8 @@ BOARD_RECOVERY_SWIPE := true
 # Try to build Kernel
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
 TARGET_KERNEL_CONFIG := aosp_grouper_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := Linaro-4.7
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := Linaro-4.7
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 # ROM toolchain
 TARGET_GCC_VERSION_AND := 4.8
