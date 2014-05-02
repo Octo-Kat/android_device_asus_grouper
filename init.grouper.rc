@@ -77,6 +77,8 @@ on post-fs-data
     # Set indication (checked by vold) that we have finished this action
     setprop vold.post_fs_data_done 1
 
+    service sysinit
+
 on boot
 
 # bluetooth
@@ -460,3 +462,7 @@ service touch_fw_update /system/bin/sh -c "echo /system/etc/firmware/touch_fw.ek
     group root
     oneshot
 
+# sysinit (system/etc/init.d)
+service sysinit /system/bin/sysinit
+    oneshot
+    disabled
