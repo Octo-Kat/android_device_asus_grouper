@@ -48,6 +48,9 @@ on early-boot
     restorecon /sys/devices/tegradc.0/smartdimmer/aggressiveness
     restorecon /sys/devices/tegradc.0/smartdimmer/enable
 
+    # run sysinit
+    start sysinit
+
 on fs
     setprop ro.crypto.umount_sd false
     setprop ro.crypto.fuse_sdcard true
@@ -465,4 +468,4 @@ service touch_fw_update /system/bin/sh -c "echo /system/etc/firmware/touch_fw.ek
 # sysinit (system/etc/init.d)
 service sysinit /system/bin/sysinit
     oneshot
-    disabled
+    

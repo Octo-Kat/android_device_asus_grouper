@@ -79,6 +79,7 @@ PRODUCT_PACKAGES := \
     l2ping \
     hcitool \
     bttest \
+    libnetcmdiface \
     com.android.future.usb.accessory
 
 PRODUCT_PACKAGES += \
