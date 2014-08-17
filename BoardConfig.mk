@@ -62,3 +62,7 @@ BOARD_SEPOLICY_UNION := \
         surfaceflinger.te \
         system.te \
         zygote.te
+
+PRODUCT_COPY_FILES += \
+	vendor/oct/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
+ 
